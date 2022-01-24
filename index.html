@@ -1,0 +1,1028 @@
+
+<!DOCTYPE html>
+<html lang="en"
+
+    <head>
+	<a href=">en</a> | <a href="IdanSite"></a>  
+  
+     
+	
+	<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+
+<script>
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+</body>
+</html>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Idan's Website</title>
+        <!-- Favicon-->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://kit.fontawesome.com/2bb1978d15.js" crossorigin="anonymous"></script>
+		 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+     
+	 <script src="assets/js/langScript.js"></script>
+	
+	 
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="assets/cs/style.css" rel="stylesheet" />
+	
+
+</body>
+  
+</html>
+    </head>
+ <body id="page-top header">
+ 
+        <!-- Navigation-->
+		
+		<a href "eng" data-reload>english </a>
+		 <a href "he" data-reload>hebrew </a>
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <ul class="mb-0" style="display: contents;"></ul>
+                    <li id="darkmode"  class="btn btn-success btn-lg py-3 px-0 px-lg-3 mx-0 mx-lg-1 current_clr_dark"><i class="fas fa-moon fa-lg"></i></li>
+                    <li id="lightmode" class="btn btn-success btn-lg py-3 px-0 px-lg-3 mx-0 mx-lg-1 "><i class="fas fa-star fa-lg"></i></li>
+                </ul>
+            <div class="divider-custom-wide divider-custom-light"><div class="divider-custom-line-wide"></div></div>
+            <ul class="mb-0" style="display: contents;">
+                     <li id="en_click" class="btn btn-success btn-lg py-3 px-0 px-lg-3 mx-0 mx-lg-1 current_lang">en</li>
+                     <li id="he_click" class="btn btn-success btn-lg py-3 px-0 px-lg-3 mx-0 mx-lg-1">he</li>
+
+             
+				
+				
+			
+	
+				
+                <!--<div class="divider-custom-wide divider-custom-light"><div class="divider-custom-line-wide"></div></div>
+                <a id="blog_click" href="blogmain.html" class="btn btn-success btn-lg py-3 px-0 px-lg-3 mx-0 mx-lg-1"><i class="fa fa-newspaper fa-lg"></i> blog</a>-->
+			</ul>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">
+                            <p id="en" class="mb-0"style="display: block;" >About</p>
+                            <p id="he" class="lead mb-0"style="display: none";><b>אודות</b></p></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">
+                            <p id="en" class="mb-0"style="display: block;">Skills</p>
+                            <p id="he" class="lead mb-0"style="display: none;"><b>יכולות</b></p></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">
+                            <p id="en" class="mb-0"style="display: block;">Projects</p>
+                            <p id="he" class="lead mb-0"style="display: none;"><b>פרוייקטים</b></p></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">
+                            <p id="en" class="mb-0"style="display: block;">Contact</p>
+                            <p id="he" class="lead mb-0"style="display: none;"><b>צור קשר</b></p></a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center mb-0">
+            <!-- Back to top of the page button-->
+
+            <button onclick="Function()" id="myBtn"<i class="fas fa-arrow-up"></i></button>
+			
+			<!-- Masthead Avatar Image-->
+			<img src="assets/img/idansade-modified.png" alt="idanround">
+		
+
+            <div class="container d-flex align-items-center flex-column">
+			
+                <!-- Masthead Heading-->
+                <h1 id="en" class="masthead-heading text-uppercase mb-0" style="display: block;">Idan Sade</h1>
+                <h1 id="he" class="masthead-heading text-uppercase mb-0" style="display:none;">עידן שדה</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+					   <div class="divider-custom-icon"><i class="fa fa-globe"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+               
+                <!-- Masthead Subheading-->
+                <p id="en" class="masthead-subheading font-weight-light mb-0"style="display: block;">Quality Assurance | Software Tester</p>
+                <p id="he" class="masthead-subheading font-weight-light mb-0"style="display: none;">אבטחת איכות | בודק תוכנה</p>
+            </div>
+        </header><hr class="mb-0 mt-0">
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 id="en" class="page-section-heading text-center text-uppercase text-white"style="display: block;">About</h2>
+                <h2 id="he" class="page-section-heading text-center text-uppercase text-white"style="display: none;">אודות</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-user"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="mb-0">
+                    <div id="en" class="container mb-5 col-lg-8 align-items-center text-center"><p class="lead mb-0"style="display: block;"><b>Hello, my name is Idan.</b></p>
+                        <img src="assets/img/idanlog.png" class="img-fluid" style="width: 30%;"></div>
+                    <div id="en" class="container mb-5 col-lg-8 align-items-center text-center"><p class="lead mb-0"style="display: block;">
+                       My QA education combined with previous work experience
+has given me a great foundation of <b>knowledge and skills</b>. I
+learn new technologies quickly and apply those abilities to
+improve the work I do. Additionally, I'm good at computer
+software installation, software performance testing and
+testing procedure development.</p></div>
+                    <div id="en" class="container mb-0 col-lg-8 align-items-center text-center"><p class="lead"> I have a resourceful approach to problem-solving, tackling
+challenges head-on and consider obstacles learning
+experiences. I'm a people-person with high energy and a lot
+of ambition. I would be honored to join your team
+                  </div>
+                <div id="he" id class="container mb-5 col-lg-8 align-items-center text-center">
+                    <p class="lead mb-0"><b>שלום, קוראים לי עידן</b></p>
+                    <img src="assets/img/idanlog.png" class="img-fluid" style="width: 30%;">
+                </div>
+                <div id="he" class="container mb-5 col-lg-8 align-items-center text-center">
+                    <p class="lead mb-0">
+
+                       קורס בדיקות התוכנה שעברתי בשילוב הידע המקצועי שרכשתי בניסיון התעסוקתי הקודם 
+					    נותנים לי את הידע והיכולות המקצועיות
+					  להצליח כבודק תוכנה.
+					  אני לומד במהירות ולבד, יודע להסתגל לשינויים וחדשנות, עובד בצוות ויודע למצוא פתרונות לבעיות במהירות.
+					   
+                </div>
+                <div id="he" class="container mb-0 col-lg-8 align-items-center text-center">
+                    <p class="lead">בנוסף אני חובב מוזיקה וספורט ואשמח לקחת חלק בצוות שלכם
+               
+                </div>
+        </section><hr class="mb-0">
+                 <!-- Skill Start -->
+                <section class="page-section bg-primary text-white" id="skills">
+                    <div class="container">
+                            <!-- About Section Heading-->
+                            <h2 id="en" class="page-section-heading text-center text-uppercase text-white "style="display: block;">Skills</h2>
+                            <h2 id="he" class="page-section-heading text-center text-uppercase text-white "style="display: none;">יכולות</h2>
+
+                            <!-- Icon Divider-->
+                            <div class="divider-custom divider-light">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <div class="container mb-5 col-lg-7 align-items-center text-center text-white">
+                               
+                         
+
+                            </div>
+                        <div class="row align-items-center mb-3">
+                            <div class="col-md-6">
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="font-weight-bold">SQL (up to join)</h4>
+                                        <h4 class="font-weight-bold">80%</h4>
+                                    </div>
+									
+                                    <div class="progress">
+                                        <div class="progress-bar --bs-primary" role="progressbar" 
+										aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="font-weight-bold">HTML</h4>
+                                        <h4 class="font-weight-bold">80%</h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar --bs-primary" role="progressbar" 
+									   aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="font-weight-bold">CSS</h4>
+                                        <h4 class="font-weight-bold">75%</h4>
+                                    </div>
+                                    <div class="progress">
+                                       <div class="progress-bar --bs-primary" role="progressbar" 
+									   aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="font-weight-bold">C#</h4>
+                                        <h4 class="font-weight-bold">60%</h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar --bs-primary" role="progressbar" 
+										aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="font-weight-bold">Quality Assurance</h4>
+                                        <h4 class="font-weight-bold">85%</h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar --bs-primary" role="progressbar"
+										 aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="font-weight-bold">Microsoft Office</h4>
+                                        <h4 class="font-weight-bold">90%</h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar --bs-primary" role="progressbar" 
+										aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="font-weight-bold">Jira</h4>
+                                        <h4 class="font-weight-bold">85%</h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar --bs-primary" role="progressbar"
+										aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="font-weight-bold">Github</h4>
+                                        <h4 class="font-weight-bold">75%</h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar --bs-primary" role="progressbar" 
+										aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="en" class="container mb-4 col-lg-8 align-items-center text-center"><p class="lead"style="display: block;">For more information-download my CV</p></div>
+                    <div id="he" class="container mb-4 col-lg-8 align-items-center text-center"><p class="lead"style="display: none;">>למידע נוסף הורד את קורות החיים שלי</p></div>
+                    <div class="text-center mb-0">
+                        <a class="btn btn-success btn-xl" href="assets/CV/Idan%20Sade%20CV-%20English.pdf" download="Idan Sade CV- English"</a>
+                            <p id="en" class="mb-0 lead"style="display: block;"><i class="fas fa-download me-2"></i>Download CV - English</p>
+                            <p id="he" class="mb-0 lead"style="display: none;">הורדת קורות חיים - אנגלית <i class="fas fa-download me-2"></i></p>
+
+                        </a>
+                        <a class="btn btn-success btn-xl" href="assets/CV/Idan%20Sade%20CV-%20Hebrew.pdf" download="Idan Sade CV- Hebrew"</a>
+                            <p id="en" class="mb-0 lead"style="display: none;"<i class="fas fa-download me-2"></i>Download CV - Hebrew</p>
+                            <p id="he" class="mb-0 lead"style="display: block;">הורדת קורות חיים - עברית <i class="fas fa-download me-2"></i></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section><hr class="mb-0">
+        <!-- Skill End -->
+        <!-- New Projects Section -->
+        <section id="projects">
+            <div class="page-section">
+            <!-- Portfolio Section Heading-->
+            <h2 id="en" class="page-section-heading text-center text-uppercase text-white mb-0"style="display: block;">Projects</h2>
+            <h2 id="he" class="page-section-heading text-center text-uppercase text-white mb-0"style="display: none;">פרוייקטים</h2>
+
+            <!-- Icon Divider-->    
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="container mb-0 col-lg-7 align-items-center text-center text-white">
+                <p id="en" class="lead"style="display: block;">Here are some of my featured projects I worked on</p>
+                <p id="he" class="lead"style="display: none;">להלן כמה מהפרוייקטים שעבדתי עליהם</p>
+  
+            </div>
+        </div>
+            <div class="container">
+                <div class="all-items">
+                    <!-- Item 1-->
+                    <div class="item mt-0">
+                        <div class="left">
+                          <div class="img">
+                            <img src="" alt="">
+                          </div>
+                        </div>
+                        <div class="right">                          
+                            <h2 id="en" class="project-title text-center lead"style="display: block;">QA Project</h2>
+                            <h2 id="he" class="project-title text-center lead"style="display: none;">פרויקט QA</h2>
+                          <h3 class="project-sub-title text-center lead">
+                            <p id="en" class="lead"style="display: block;">Project <b>"Warehouse"</b></p>
+                            <p id="he" class="lead"style="display: none;"> פרוייקט <b>מחסן</b></p>
+
+                               
+                          <div class="text-center mb-0">
+                            <a class="btn btn-success btn-xl" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                             <p id="en" class="lead mb-0" style="display: block;"><i class="fas fa-plus"></i> Preview</p>
+                             <p id="he" class="lead mb-0" style="display: none;"><i class="fas fa-plus"></i> תצוגה</p>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item 2-->
+                        <div class="item">
+                            <div class="left">
+                            <div class="img">
+                                <img src="" alt="">
+                            </div>
+                            </div>
+                        <div class="right">
+                          <h2 id="en" class="project-title text-center lead"style="display: block;">QA Project</h2>
+                          <h2 id="he" class="project-title text-center lead" style="display:none;">פרויקט QA</h2>
+                          <h3 class="project-sub-title text-center lead">
+                            <p id="en" class="lead"style="display: block;">Project <b>"Web"</b></p>
+                            <p id="he" class="lead"style="display: none;"> פרוייקט <b>"אתר"</b></p>
+                           
+                            <div class="text-center mb-0">
+                            <a class="btn btn-success btn-xl" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                             <p id="en" class="lead mb-0"style="display: block;"><i class="fas fa-plus"></i> Preview</p>
+                             <p id="he" class="lead mb-0"style="display: none;"><i class="fas fa-plus"></i> תצוגה</p>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item 3-->
+                      <div class="item mb-5">
+                        <div class="left">
+                        <div class="img">
+                            <img src="" alt="">
+                        </div>
+                        </div>
+                    <div class="right">
+                      <h2 id="en" class="project-title text-center lead"style="display: block;">QA Project</h2>
+                      <h2 id="he" class="project-title text-center lead" style="display: none;">פרויקט QA</h2>
+                      <h3 class="project-sub-title text-center lead">
+                        <p id="en" class="lead" style="display: block;">Project <b>"Mobile"</b></p>
+                        <p id="he" class="lead"style="display: none;"> פרוייקט <b>"טלפון"</b></p>
+                      
+
+                      <div class="text-center mb-0">
+                        <a class="btn btn-success btn-xl" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                         <p id="en" class="lead mb-0"style="display: block;"><i class="fas fa-plus"></i> Preview</p>
+                         <p id="he" class="lead mb-0"style="display: none;"><i class="fas fa-plus"></i> תצוגה</p>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                      <!-- More -->
+                      <div class="text-center mb-5">
+                        <a class="btn btn-success btn-xl" data-bs-toggle="modal" data-bs-target="#portfolioModal0">
+                            <p id="en" class="lead mb-0"style="display: block;"><i class="fas fa-folder-open me-2"></i>More work</p>
+                            <p id="he" class="lead mb-0"style="display: none;"><i class="fas fa-folder-open me-2"></i>עוד עבודות</p>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section><hr class="mb-0">
+        <!-- Contact Section-->
+        <section class="page-section bg-primary text-white" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 id="en" class="page-section-heading text-center text-uppercase text-white mb-0"style="display: block;">Say Hello</h2>
+                <h2 id="he" class="page-section-heading text-center text-uppercase text-white mb-0"style="display: none;">אמור שלום</h2>
+
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-address-card"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="container-fluid py-1" id="contact">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-xl-7">
+                                <div class="contact-form text-center">
+                                    <div id="success"></div>
+                                    <form id="en" action="https://formsubmit.co/idansade9@gmail.com" method="POST"style="display: block;"><!-- id="contactForm" novalidate="novalidate"-->
+                                        <input type="hidden" name="_next" value="">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_subject" value="New E-mail Woohoo!">
+                                        <input type="hidden" name="_template" value="table">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <input type="text" name="The Name" class="form-control py-3 px-3" id="name" placeholder="Your Name"
+                                                    required="required" data-validation-required-message="Please enter your name" />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="email" name="Their E-mail" class="form-control py-3 px-3" id="email" placeholder="Your Email"
+                                                    required="required" data-validation-required-message="Please enter your email" />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea class="form-control py-3 px-3" name="The Message" rows="5" id="message" placeholder="Message"
+                                                required="required" style="	font-size: 1.5rem;
+                                                border-left: 0;
+                                                border-right: 0;
+                                                border-top: 0;
+                                                border-width: 1px;
+                                                border: 0.125rem solid #ced4da;"
+                                                data-validation-required-message="Please enter your message"></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-success btn-xl mb-5" type="submit" id="sendMessageButton">
+                                                <p class="lead mb-0"><i class="fas fa-comment-alt me-2"></i>Send Message</p></button>
+                                        </div>
+                                    </form>
+                                    <form id="he" action="https://formsubmit.co/idansade9@gmail.com" method="POST"style="display: none;"><!-- id="contactForm" novalidate="novalidate"-->
+                                        <input type="hidden" name="_next" value=>
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_subject" value="New E-mail Woohooo!">
+                                        <input type="hidden" name="_template" value="table">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <input type="email" name="Their E-mail" class="form-control text-end py-3 px-3" id="email" placeholder="כתובת מייל"
+                                                    required="required" data-validation-required-message="הנה הזן את כתובת המייל שלך" />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="The Name" class="form-control text-end py-3 px-3" id="name" placeholder="שם פרטי"
+                                                    required="required" data-validation-required-message="הנה הזן את שמך" />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea class="form-control text-end py-3 px-3" name="The Message" rows="5" id="message" placeholder="הודעה"
+                                                required="required" style="	font-size: 1.5rem;
+                                                border-left: 0;
+                                                border-right: 0;
+                                                border-top: 0;
+                                                border-width: 1px;
+                                                border: 0.125rem solid #ced4da;"
+                                                data-validation-required-message="Please enter your message"></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-success btn-xl mb-5" type="submit" id="sendMessageButton">
+                                                <p class="lead mb-0"><i class="fas fa-comment-alt me-2"></i>שלח הודעה</p></button>
+                                        </div>
+                                    
+                                            </div>
+                                        </div>
+                                        <d
+                               
+                                               
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact End -->
+        </div>
+    </section>
+     <footer class="mt-5">
+        <div class="waves ">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="container text-center">
+            <h4 id="en" class="text-uppercase mb-4 text-white"style="display: block;">Contact me</h4>
+            <h4 id="he" class="text-uppercase mb-4 text-white"style="display: none;">צור קשר</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="tel:0535203564"><i class="fas fa-mobile-alt fa-lg"></i></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://telegram.me/idansade9" target="_blank"><i class="fab fa-fw fa-telegram-plane fa-lg"></i></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="http://linkedin.com/in/idan-sade" target="_blank"><i class="fab fa-fw fa-linkedin-in fa-lg"></i></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/idansade" target="_blank"><i class="fab fa-fw fa-github fa-lg"></i></a>
+        </div>
+    </footer>   
+    <div class=" copyright py-4 text-center text-white">
+        <div class="container lead"><small><b>Copyright &copy; </b></small></div>
+    </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 0-->
+        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" aria-labelledby="portfolioModal0" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 id="en" class="portfolio-modal-title text-white text-uppercase mb-0"style="display: block;">Oops!</h2>
+                                <h2 id="he" class="portfolio-modal-title text-white text-uppercase mb-0"style="display: none;">!אוי</h2>
+   
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-exclamation"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Masthead Subheading-->
+                                    <div class="container mb-0 col-xxl-12 align-items-center text-center text-white">
+                                        <p id="en" class="lead"style="display: block;">Sorry, but this part of the website is still under construction..</p>
+                                        <p id="he" class="lead"style="display: none;">...מצטער, אבל החלק הזה של האתר עדיין תחת פיתוח</p>
+
+                                </div>
+                                <div class="text-center mt-4">
+                                    <a class="btn btn-success btn-xl" href="#" data-bs-dismiss="modal">
+                                        <p id="en" class="lead mb-0"style="display: block;"><i class="fas fa-times fa-fw"></i>Close window</p>
+                                        <p id="he" class="lead mb-0"style="display: none;">סגור חלון<i class="fas fa-times fa-fw"></i></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 1: project warehouse-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 id="en" class="portfolio-modal-title text-white text-uppercase mb-0"style="display: block;">Warehouse Project</h2>
+                                    <h2 id="he" class="portfolio-modal-title text-white text-uppercase mb-0"style="display: none;">פרוייקט מחסן</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-warehouse"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text -->
+                                    <div id="en" class="container mb-0 col-xxl-12 align-items-center text-center text-white"><p class="lead"style="display: block;">In this project, we was grouped into a team of 3,<br> Then we were tasked a made-up warehouse by our teachers, 
+                                        and had to create an <b>STP document</b>, find bugs and report them by using <b>TestRail</b>, 
+                                        <hr></p><p class="lead">
+                                        We were also given the product details of that warehouse, it was supposed to replace an old system that included using Microsoft Excel and handwritten 
+                                        information.<hr></p><p class="lead">The new system we got in the product details contained all of the information including a detailed explanation about the users of the 
+                                        system, a technical overview of the majority of screens in the software, the system also has <b>"BATCH" processes and Query option that connect to a database.</p></div>
+                                    <div id="he" class="container mb-0 col-xxl-12 align-items-center text-center text-white"><p class="lead";">,בפרוייקט זה הצתוותנו לקבוצות של שלושה<br>
+                                        לאחר מכן הוטל עלינו מסמך איפון של מחסן שהורכב על ידי המורים שלנו, והיה צריך ליצור מסמך תכנון בדיקות <b>(STP)</b> ואז היה עלינו למצוא באגים באמצעות תוכנה בשם <b>TestRail</b>  
+                                        <hr> <p class="lead";">
+                                        קיבלנו גם את פרטי המוצר של אותו מחסן, הוא היה אמור להחליף מערכת ישנה שכללה שימוש ב- Microsoft Excel וכתובה בכתב יד
+                                        .<hr></p><p class="lead">המערכת החדשה שקיבלנו בפרטי המוצר הכילה את כל המידע כולל הסבר מפורט על משתמשי
+                                        מערכת, סקירה טכנית של רוב המסכים בתוכנה, למערכת יש גם תהליכי <b>"BATCH"</b> ואפשרות שאילתה המתחברים למסד נתונים.</p></div>
+          
+                                                <!-- Portfolio Modal - Image-->
+                                        <img class="img-fluid rounded mb-auto" src="assets/img/warehouse.png" alt="..." />
+                                    <div id="en" class="container mb-0 col-xxl-12 align-items-center text-center"style="display:block;"><p class="lead text-white">At the end of the project, we turned in our projects to STP and gave a presentation to the audience 
+                                        <br>I have attached a copy of the document and the presentation.</p></div>
+                                    <div id="he" class="container mb-0 col-xxl-12 align-items-center text-center"style="display:none;"><p class="lead text-white" style="direction: rtl;">בסוף הפרויקט, הפכנו את הפרויקטים שלנו ל- STP והעברנו מצגת בפני הקהל
+                                        <br> צירפתי עותק של המסמך והמצגת </p> </div>
+          
+                                    <div class="text-center mt-5">
+                                        <a class="btn btn-success btn-xl" style="width: 410px;" href="assets\Projects\STP Warehouse IdanSade.docx">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-download me-2"></i>Download STP document</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-download me-2"></i>STP הורד מסמך</p>
+
+                                        </a>
+                                        <a class="btn btn-success btn-xl" data-bs-toggle="modal" data-bs-target="#portfolioModal1b">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-eye me-2"></i>View Here</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-eye me-2"></i>ראה כאן</p>
+
+                                        </a>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <a class="btn btn-success btn-xl" style="width: 410px;" href="assets\Projects\Warehouse presentation IdanSade.pptx">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-download me-2"></i>Download STP presentation</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-download me-2"></i>STP הורד מצגת</p>
+                                        </a>
+                                        <a class="btn btn-success btn-xl" data-bs-toggle="modal" data-bs-target="#portfolioModal1a">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-eye me-2"></i>View Here</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-eye me-2"></i>ראה כאן</p>
+
+                                        </a>
+                                    </div><hr class="mt-5 mb-5">
+                                    <div id="en" class="container mb-0 col-xxl-12 align-items-center text-center"><p class="lead text-white"style="display:block;">And here are some of the reports I've made in TestRail</p></div>
+                                    <div id="he" class="container mb-0 col-xxl-12 align-items-center text-center"><p class="lead text-white" style="display:none;">והנה כמה מהדיווחים שעשיתי ב-TestRail</p></div>
+                                    <div class="text-center mt-5">
+                                        <a class="btn btn-success btn-xl" href="assets\Projects\Accounting query - TestRail.pdf" target="_blank">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-bug me-2"></i>View TC 1</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-bug me-2"></i>1 TC ראה</p>
+
+                                        </a>
+                                        <a class="btn btn-success btn-xl" href="assets\Projects\Add a new item to the item database - TestRail.pdf" target="_blank">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-bug me-2"></i>View TC 2</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-bug me-2"></i>2 TC ראה</p>
+
+                                        </a>
+                                        <a class="btn btn-success btn-xl" href="assets\Projects\Cash payment method - TestRail.pdf" target="_blank">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-bug me-2"></i>View TC 3</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-bug me-2"></i>3 TC ראה</p>
+
+                                        </a>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <a class="btn btn-success btn-xl" href="assets\Projects\Credit card payment without internet connection - TestRail.pdf" target="_blank">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-bug me-2"></i>View TC 4</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-bug me-2"></i>4 TC ראה</p>
+
+                                        </a>
+                                        <a class="btn btn-success btn-xl" href="assets\Projects\New Client Receive - TestRail.pdf" target="_blank">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-bug me-2"></i>View TC 5</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-bug me-2"></i>5 TC ראה</p>
+
+                                        </a>
+                                        <a class="btn btn-success btn-xl" href="assets\Projects\Try to change items data from _sales_ acount - TestRail.pdf" target="_blank">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-bug me-2"></i>View TC 6</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-bug me-2"></i>6 TC ראה</p>
+
+                                        </a>
+                                    </div>
+                                        <br><button class="btn-success btn btn-xl" href="#" data-bs-dismiss="modal">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-times fa-fw"></i>Close window</p>
+                                            <p id="he" class="lead mb-0"style="display:none;">סגור חלון<i class="fas fa-times fa-fw"></i></p>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2: project web-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 id="en" class="portfolio-modal-title text-white text-uppercase mb-0"style="display:block;">Web Project</h2>
+                                    <h2 id="he" class="portfolio-modal-title text-white text-uppercase mb-0"style="display:none;">פרוייקט אתר</h2>
+                              
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-laptop"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <div id="en" class="container mb-0 col-xxl-12 align-items-center text-center text-white"><p class="lead"style="display:block;">In this project, the task was to take an website and find bugs or issues in and report 
+                                        them by using a project management program-  <b>Jira</b>.<br>
+                                        we chose upon "audi" Israel website that offered information about Audi models,service centers etc.<br>
+                                        After we finished checking the website in two circles, one using a pre-made <b>checklist</b> and the second by <b>exploratory testing</b>, 
+                                        we reported all the bugs into Jira, made an <b>STR document</b>, and then presented it in the class.</p></div>
+                                        <!-- Portfolio Modal - Text-->
+                                    <div id="he" class="container mb-0 col-xxl-12 align-items-center text-center text-white"><p class="lead"">בפרוייקט זה המשימה הייתה לקחת אתר אותו אנחנו בוחרים ולמצוא בו כמה יותר באגים, לאחר מכן לדווח על הבאגים בתוכנה לניהול פרוייקטים <b>"Jira"</b>. <br>
+                                       בחרנו באתר של "אאודי ישראל" המציע לקהל סקירה של דגמים, אינפורמציה על מוסכים ומרכזי שירות וכו'. <br>
+                                       לאחר שבחרנו אתר ביצענו עליו בדיקות בשני סבבים, הראשון באמצעות <b>צ'קליסט</b> שהוכן מראש ובסבב השני באמצעות מעבר על האתר וכל הפונקציות שבו <b>exploratory testing</b>
+									   את כל הבאגים שמצאנו דיווחנו לJira הכנו מסמך <b>STR</b> והצגנו את הפרויקט בפני הכיתה.
+                                       </p> </div>
+                                    <!-- Portfolio Modal - Image-->
+
+                                    <img class="img-fluid rounded mb-auto" src="assets/img/audi-logo.gif" alt="..." />
+                                    <div id="en" class="container mb-0 col-xxl-12 align-items-center text-center text-white">
+                                        <p class="lead"style="display:block;">I've included a copy of the document and the presentation</p></div>
+                                    <div id="he" class="container mb-0 col-xxl-12 align-items-center text-center"><p class="lead text-white" style="display:none;">
+                                        <br> צירפתי עותק של המסמך והמצגת </p> </div>
+
+                                    <div class="text-center mt-4">
+                                        <a class="btn btn-xl btn-success" style="width: 410px;" href="assets\Projects\STR Audi Israel IdanSade.docx">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-download me-2"></i>Download STR document</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-download me-2"></i>STR הורד מסמך</p>
+
+                                        </a>
+                                        <a class="btn btn-xl btn-success" data-bs-toggle="modal" data-bs-target="#portfolioModal2a">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-eye me-2"></i>View Here</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-eye me-2"></i>ראה כאן</p>
+                                        </a>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <a class="btn btn-xl btn-success" style="width: 410px;" href="assets\Projects\STR AUDI hebrew site IdanSade.pptx">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-download me-2"></i>Download STR presentation</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-download me-2"></i>STR הורד מסמך</p>
+
+                                        </a>
+                                        <a class="btn btn-xl btn-success" data-bs-toggle="modal" data-bs-target="#portfolioModal2b">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-eye me-2"></i>View Here</p>
+                                            <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-eye me-2"></i>ראה כאן</p>
+
+                                        </a>
+                                    </div>
+                                        <br><button class="btn-success btn btn-xl" href="#" data-bs-dismiss="modal">
+                                            <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-times fa-fw"></i>Close window</p>
+                                            <p id="he" class="lead mb-0"style="display:none;">סגור חלון<i class="fas fa-times fa-fw"></i></p>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3: project mobile-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 id="en" class="portfolio-modal-title text-white text-uppercase mb-0"style="display:block;">Project Mobile</h2>
+                                    <h2 id="he" class="portfolio-modal-title text-white text-uppercase mb-0"style="display:none;">פרוייקט מובייל</h2>
+
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-mobile"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <div id="en" class="container mb-0 col-xxl-12 align-items-center text-center text-white"><p class="lead" style="display:block;">
+                                        In this project we had to find a mobile app and find variety of issues and bugs on <b>IOS</b> & <b>ANDROID</b>, then report 
+                                        them in another application other than Jira, we chose <b>"ZOHO- Bugtracker"</b> application, 
+                                        At the end of the reports, we made an <b>STR document</b> and presented it to the class.</p></div>
+                                        <!-- Portfolio Modal - Text-->
+                                    <div id="he" class="container mb-0 col-xxl-12 align-items-center text-center text-white"><p class="lead">
+									בפרוייקט זה היינו צריכים לבחור אפליקציה, אנחנו בחרנו באפליקצייה של אולג'ובס למציאת עבודה ולמצוא ולדווח באגים ובעיות בתוכנה שהיא לא Jira,
+									בחרנו בתוכנה <b>"ZOHO-Bugtracker"</b> ובסוף הדיווחים על הבאגים הכנו <b>מסמך STR</b> והצגנו אותו בפני הכיתה.
+						
+                                        .</p> </div>
+                                    <!-- Portfolio Modal - Image-->
+
+                                    <img class="img-fluid rounded mb-auto" src="assets/img/Logo alljobs.png" alt="..." />
+                                    <div id="en" class="container mb-0 col-xxl-12 align-items-center text-center text-white"style="display:block;">
+                                        <p class="lead">I've included a copy of the STR document</p></div>
+                                    <div id="he" class="container mb-0 col-xxl-12 align-items-center text-center">
+                                        <p class="lead text-white" style="display:none;">צירפתי עותק של מסמך הSTR</p></div>
+
+                                        <div class="text-center mt-4">
+                                            <a class="btn btn-xl btn-success" style="width: 410px;" href="assets\Projects\STR ALLJOBS IdanSade.docx">
+                                                <p id="en" class="lead mb-0"style="display:none;"><i class="fas fa-download me-2"></i>Download STR document</p>
+                                                <p id="he" class="lead mb-0"style="display:block;"><i class="fas fa-download me-2"></i>STR הורד מסמך</p>
+
+                                            </a>
+                                            <a class="btn btn-xl btn-success" data-bs-toggle="modal" data-bs-target="#portfolioModal3a">
+                                                <p id="en" class="lead mb-0"style="display:none;"><i class="fas fa-eye me-2"></i>View Here</p>
+                                                <p id="he" class="lead mb-0"style="display:none;"><i class="fas fa-eye me-2"></i>ראה כאן</p>
+
+                                            </a>
+                                        </div>
+                                            <br><button class="btn-success btn btn-xl" href="#" data-bs-dismiss="modal">
+                                                <p id="en" class="lead mb-0"style="display:block;"><i class="fas fa-times fa-fw"></i>Close window</p>
+                                                <p id="he" class="lead mb-0"style="display:none;">סגור חלון<i class="fas fa-times fa-fw"></i></p>
+
+                                        </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 1a: warehouse presentation-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1a" tabindex="-1" aria-labelledby="portfolioModal1a" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-light text-uppercase mb-0">STP Presentation</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-video"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Masthead Subheading-->
+                                    <div class="container mb-0 col-xxl-12 align-items-center text-center"><p class="lead">Please enjoy the watch</p>
+                                </div>
+                         <iframe src="https://onedrive.live.com/embed?cid=793056DC64BA0951&resid=793056DC64BA0951%21117&authkey=AApBSF_oD_ceeGg&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe>
+                                <div class="text-center mt-4">
+                                    <a class="btn-success btn btn-xl" href="#" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close window
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 1b: warehouse document-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1b" tabindex="-1" aria-labelledby="portfolioModal1b" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-light text-uppercase mb-0">STP Document</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-file"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Masthead Subheading-->
+                                    <div class="container mb-0 col-xxl-12 align-items-center text-center"><p class="lead">Please enjoy the read</p>
+                                </div>
+                               <iframe src="https://onedrive.live.com/embed?cid=793056DC64BA0951&resid=793056DC64BA0951%21111&authkey=AKrExBf_FNEvM28&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+                                <div class="text-center mt-4">
+                                    <a class="btn-success btn btn-xl" href="#" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close window
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2a: web document-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2a" tabindex="-1" aria-labelledby="portfolioModal2a" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-light text-uppercase mb-0">STR Document</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-file"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Masthead Subheading-->
+                                    <div class="container mb-0 col-xxl-12 align-items-center text-center"><p class="lead">Please enjoy the read</p>
+                                </div>
+                               <iframe src="https://onedrive.live.com/embed?cid=793056DC64BA0951&resid=793056DC64BA0951%21114&authkey=AE3KQgQBjJeObhg&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+                                <div class="text-center mt-4">
+                                    <a class="btn-success btn btn-xl" href="#" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close window
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2b: web presentation-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2b" tabindex="-1" aria-labelledby="portfolioModal2b" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-light text-uppercase mb-0">STR Presentation</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-video"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Masthead Subheading-->
+                                    <div class="container mb-0 col-xxl-12 align-items-center text-center"><p class="lead">Please enjoy the watch</p>
+                                </div>
+                               <iframe src="https://onedrive.live.com/embed?cid=793056DC64BA0951&resid=793056DC64BA0951%21118&authkey=AHR1XX2l3gKA-dY&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe>
+                                <div class="text-center mt-4">
+                                    <a class="btn-success btn btn-xl" href="#" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close window
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3a: warehouse presentation-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3a" tabindex="-1" aria-labelledby="portfolioModal3a" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-light text-uppercase mb-0">STP Presentation</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-video"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Masthead Subheading-->
+                                    <div class="container mb-0 col-xxl-12 align-items-center text-center"><p class="lead">Please enjoy the watch</p>
+                                </div>
+                                <iframe src="https://onedrive.live.com/embed?cid=793056DC64BA0951&resid=793056DC64BA0951%21112&authkey=AKsT-KlZVtQMGEM&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+                                <div class="text-center mt-4">
+                                    <a class="btn-success btn btn-xl" href="#" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close window
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script src="assets/js/easing.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="assets/js/jqBootstrapValidation.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <!-- Template Javascript -->
+    <script src="assets/js/main.js"></script>
+    <script src="C:/Users/isade/Desktop/assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>     
+    <script src="/path/to/flickity.pkgd.min.js"></script>       
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>                    
+    <div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a ></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Go for it</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Black Friday Prices",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 22px; font-weight: 700; text-transform: uppercase;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Get 90% Off!",h2Tag.setAttribute("style",'color: white; margin: 10px 0 15px 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Get Web Hosting for $0.99/month + SSL Certificate for FREE!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 15px;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/bf-2020-wp-inject-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script></body>
+	    <script src="assets/js/langScript.js"></script>
+		 <script src="assets/js/colors.js"></script>
+</body>
+
+</html>
